@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - JavaScript</title>
+
+    <!-- Criando uma chamada da biblioteca externa em JS-->
+    <script type="text/javascript" src="../js/funcao.js"></script>
+
+    <!-- Criando procedimentos em JavaScript-->
+    <!--<script>
+        // alert ("Olá sejam todos bem vindos");
+
+        // Criando variáveis e utilizando no alert
+        /*var empresa="Gama Academy";
+        var mensagem="Olá sejam todos bem vindos a - ";
+        alert(mensagem+empresa);*/
+
+        // Criando uma caixa de interação com o usuário
+        /*var nome = prompt("Olá seja bem vindo, qual o seu nome?","Insira o seu nome");
+        alert("Olá "+nome+" seja bem vindo!!!");*/
+
+        function frase() {
+            alert("Oi nós somos a Gama Academy para maiores informações envie o email para nós");
+        }
+
+        function validar(){
+            var nome=contato_gama.nome_cliente.value;
+            var email=contato_gama.email_cliente.value;
+            // alert(nome+ " - "+email);
+
+            if(nome==""){
+                alert("O preenchimento do campo nome é obrigatório");
+                contato_gama.nome_cliente.focus();
+                return false;
+            }
+
+            if(email=="" || email.indexOf('@')== -1){
+                alert("O preenchimento email é obrigatório, com um email válido");
+                contato_gama.email_cliente.focus();
+                return false;
+            }
+
+            alert("Olá "+nome+ " seja bem vindo a Gama Academy, estaremos enviando o nosso portifólio para o seu email  "+email);
+            
+        }
+    </script>-->
+
+</head>
+
+<body>
+    <!-- Inserindo um cabeçalho-->
+    <h2>Seja bem vindo a Gama Academy</h2>
+    <!-- Inserindo uma quebra de linha-->
+    <br>
+    <p>Para maiores informações click no botão abaixo:</p>
+    <!-- Inserindo uma quebra de linha-->
+    <br>
+    <!-- Inserindo um botão chamando a função em JS-->
+    <input type="button" onclick="frase()" value="Informações">
+    <!-- Inserindo uma quebra de linha-->
+    <br>
+    <br>
+    <br>
+    <!-- inserindo um formuláio de contato-->
+    <form id="contato_gama" method="POST">
+        <label>Nome:</label> <input type="text" name="nome_cliente"><br><br>
+        <label>Email:</label><input type="text" name="email_cliente"><br><br>
+
+        <!-- Inserindo um botão de controle-->
+        <input type="submit" onclick="return validar()" value="Enviar">
+    </form>
+
+
+</body>
+
+</html>

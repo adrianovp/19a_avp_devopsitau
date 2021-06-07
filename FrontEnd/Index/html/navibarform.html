@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Bootstrap NavBar</title>
+
+    <!-- Chamando a biblioteca bootstrap - CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Chamando a biblioteca bootstrap - JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <!-- Chamando o arquivo de CSS externo-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body>
+        <!-- Inserindo um menu Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="../imagens/logo_gama.png" width="140" height="40"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">QUEM SOMOS <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PARA PESSOAS
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Gama Station (App)</a>
+                    <a class="dropdown-item" href="#">Product Design (XP</a>
+                    <a class="dropdown-item" href="#">Dev Fullstack (XP)</a>
+                    <a class="dropdown-item" href="#">Growth Kacking (XP)</a>
+                    <a class="dropdown-item" href="#">Business Developer <br>(XP)</a>
+                  </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      PARA EMPRESAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Recrutamento e <br> Treinamento</a>
+                      <a class="dropdown-item" href="#">Feira de Contratações</a>
+                      
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Criando um contanier na nossa página-->
+          <div class="container-fluid">
+
+            <!-- Criando banner-->
+            <div class="row">
+                    <!-- Criando banner simples-->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="../imagens/img4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../imagens/img3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../imagens/img1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                      </div>
+
+            </div>
+
+
+            <!-- Inserindo uma linha dentro do nosso container-->
+            <div class="row">
+                <!-- Inserindo colunas dentro da linha no container-->
+                <div class="col-lg-1  col-md-1  col-sm-1"></div>
+                <div class="col-lg-10 col-md-10 col-sm-10">
+                    <!-- Inserindo o nosso formulário-->
+                    <!-- Construtindo os campos para o nosso formulário-->
+    <form id="contatos" method="POST">
+        <!-- Inserindo uma caixa de contexto para o formulário-->
+        <fieldset>
+            <!-- Inserindo uma legenda na caixa do nosso formulário-->
+            <legend>Para realizar os cursos preencha o formulário abaixo</legend>
+            <label>Nome:</label><input type="text" name="nome_cliente"  class="campo_nome" required><br><br>
+            <label>Email:</label><input type="email" name="email_cliente" class="campo_email" required><br><br>
+            <label>Senha:</label><input type="password" name="senha_cliente" class="campo_senha" required><br><br>
+            <!-- Criando o tipo de campo como radio-->
+            <label>Genero:</label>
+            <input type="radio" name="genero_cliente" value="Feminino" required>Feminino
+            <input type="radio" name="genero_cliente" value="Masculino" required>Masculino
+            <input type="radio" name="genero_cliente" value="Outros" required>Outros
+            <input type="radio" name="genero_cliente" value="Não informado" required>Não Infomado<br><br>
+
+            <!-- Criando uma lista de opções com o campo dropdown-->
+            <label>Escolha o curso desejado:</label>
+            <select required>
+                <option name="curso_escolhido_cliente" value="Cliente Não escolheu"></option>
+                <option name="curso_escolhido_cliente" value="HTML">HTML</option>
+                <option name="curso_escolhido_cliente" value="CSS">CSS</option>
+                <option name="curso_escolhido_cliente" value="JS">JavaScript</option>
+                <option name="curso_escolhido_cliente" value="XML">XML</option>
+            </select><br><br>
+
+            <!-- Criando o componente data-->
+            <label>Escolha qual a data irá realizar o curso</label>
+            <input type="date" name="data_curso_cliente"><br><br>
+
+            <!-- Criando o componete de escolha checkbox-->
+            <label> Escolha qual o período deseja realizar o curso:</label>
+            <input type="checkbox" name="periodo_curso_cliente" value="Manhã">Manhã
+            <input type="checkbox" name="periodo_curso_cliente" value="Tarde">Tarde
+            <input type="checkbox" name="periodo_curso_cliente" value="Noturno">Noturno<br><br>
+
+            <!-- Criando um campo de mensagem -->
+            <label>Mensagem</label><br>
+            <textarea name="mensagem_cliente" cols="40" row="3" maxlength="255"></textarea><br><br>
+
+            <!-- Criando um campo de anexos-->
+            <label>Para realizar o nosso curso, por favor anexar um comprovante de residência</label>
+            <input type="file" name="arquivo_cliente"><br><br>
+
+            <!-- Criando um botão de envio dos dados -->
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+    </form>
+
+                </div>
+                <div class="col-lg-1  col-md-1  col-sm-1"></div>
+            </div>
+          </div>
+</body>
+</html>

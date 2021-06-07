@@ -1,0 +1,42 @@
+        p{
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+        .formulario{
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+        h1{
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+        /* Criando uma classe de Estilos-->*/
+        .observacao{
+            font-size: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: gray;
+        }
+
+        body{
+            background-color:darkseagreen;
+        }
+        .menu{
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            color: black; 
+        }
+        .botao{
+            font-size: 11px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            color:darkgreen;
+            background-color: darkseagreen;
+            border-color: darkgreen;    
+        }
+    

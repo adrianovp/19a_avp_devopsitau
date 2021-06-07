@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Gama Academy</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
     <table border="0" width="100%">
         <tr>
-            <td align="center">
+            <td align="center" class="menu">
                 <a href="../html/index.html">
                     <img src="../imagens/logo-gama-academy.png" width="140" height="40">
                 </a>
@@ -32,6 +34,45 @@
             </td>
         </tr>
     </table>
+    <br>
+    <form id="contatos" method="POST" class="formulario">
+        <fieldset>
+            <legend><b>Para realizar os cursos preencha o formulario abaixo:</b></legend>
+            <label>Nome:</label>
+            <input type="text" name="nome_cliente" required><br><br>
+            <label>E-mail:</label>
+            <input type="email" name="email_cliente" required><br><br>
+            <label>Password:</label>
+            <input type="password" name="senha_cliente" required><br><br>
+            <br><br>
+            <label>Genero:</label>
+            <input type="radio" name="genero_cliente" value="Feminino" required>Feminino
+            <input type="radio" name="genero_cliente" value="Masculino" required>Masculino
+            <input type="radio" name="genero_cliente" value="Outros" required>Outros
+            <input type="radio" name="genero_cliente" value="Não Informado" required>Não Informado<br><br>
+            <label>Escolha o curso desejado: </label>
+            <select required>
+                <option name="curso_escolhido_cliente" value="Cliente não definiu"></option>
+                <option name="curso_escolhido_cliente" value="HTML">HTML</option>
+                <option name="curso_escolhido_cliente" value="CSS">CSS</option>
+                <option name="curso_escolhido_cliente" value="JS">JAVA SCRIPT</option>
+                <option name="curso_escolhido_cliente" value="XML">XML</option>
+            </select><br><br>
+            <labe>Escolha qual a data irá realizar o curso</labe>
+            <input type="date" name="data_curso_cliente" required><br><br>
+            <labe>Escolha o período desejado para realizar o curso</labe>
+            <input type="checkbox" name="periodo_curso_cliente" value="Manhã">Manhã
+            <input type="checkbox" name="periodo_curso_cliente" value="Tarde">Tarde
+            <input type="checkbox" name="periodo_curso_cliente" value="Noturno">Noturno<br><br>
+            <labe>Mensagem</labe>
+            <textarea name="mensagem_cliente" cols="40" rows="3" maxlength="255"></textarea><br><br>
+            <label>Para realizar o nosso curso, por favor anexe o seu comprovante de residência</label>
+            <input type="file" name="arquivo_cliente" >
+            <br><br>
+            <input type="submit" value="Enviar" class="botao">
+
+        </fieldset>
+    </form>
 </body>
 
 </html>
